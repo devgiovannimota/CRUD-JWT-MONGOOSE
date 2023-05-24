@@ -1,16 +1,7 @@
 const mongoose = require("mongoose");
 
 mongoose.connect(
-  "mongodb+srv://giovaniname:123123123@cluster0.9hnutps.mongodb.net/?retryWrites=true&w=majority",
-  {},
-  (error) => {
-    if (error) {
-      console.log("Falha ao autenticar com o mongodb");
-      console.log(error);
-      return;
-    }
-    console.log("Conexão com mongodb estável");
-  }
+  "mongodb+srv://giovaniname:123123123@cluster0.9hnutps.mongodb.net/?retryWrites=true&w=majority"
 );
 
 mongoose.Promise = global.Promise;
